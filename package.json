@@ -1,0 +1,19 @@
+
+{
+  "author": "Ian Serlin",
+  "name": "now-middleware",
+  "description": "Enables a middleware API for hooking into the NowJS execution path.",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ianserlin/now-middleware.git"
+  },
+  "main": "lib/middleware.js",
+  "engines": {
+    "node": ">= v0.4.0"
+  },
+  "dependencies": {
+    "now": ">= 0.7.6"
+},
+  "devDependencies": {}
+}
