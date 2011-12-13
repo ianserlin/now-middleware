@@ -27,6 +27,7 @@ nowjs.before(function(client,next){
 </pre></code>
 
 Parameters are:
+
 * the beforeware function you want called when each new nowjs session is established, you will receive the newly created nowjs user object (the "this" in remotely called functions) passed as client and the next() function which you must call to pass control to the next beforeware layer
 
 To run when a user makes a remote method call on the server (e.g. to retrieve an HTTP session):
