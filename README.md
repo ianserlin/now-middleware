@@ -10,8 +10,11 @@ require('now-middleware')(nowjs);
 To run when a new user connects:
 -------------------------------
 
+<code>
 .before( function );
+</code>
 
+<pre><code>
 nowjs.before(function(client,next){
   var sid = decodeURIComponent( client.user.cookie[sessionKey] );
   sessionStore.get( sid, function( err, session ){
@@ -19,6 +22,7 @@ nowjs.before(function(client,next){
     next();
   });
 });
+</pre></code>
 
 Parameters are:
 * the beforeware function you want called when each new nowjs session is established, you will receive the newly created nowjs user object (the "this" in remotely called functions) passed as client and the next() function which you must call to pass control to the next beforeware layer
